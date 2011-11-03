@@ -1,3 +1,9 @@
+# revision 16134
+# category Package
+# catalog-ctan /macros/latex/contrib/listofsymbols
+# catalog-date 2009-11-29 13:21:16 +0100
+# catalog-license lppl
+# catalog-version 0.2
 Name:		texlive-listofsymbols
 Version:	0.2
 Release:	1
@@ -51,6 +57,7 @@ though, is different from the way nomencl.sty does it.
 #- source
 %doc %{_texmfdistdir}/source/latex/listofsymbols/listofsymbols.dtx
 %doc %{_texmfdistdir}/source/latex/listofsymbols/listofsymbols.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -61,3 +68,5 @@ though, is different from the way nomencl.sty does it.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
