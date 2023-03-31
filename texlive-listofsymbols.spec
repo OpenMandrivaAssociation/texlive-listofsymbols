@@ -1,6 +1,6 @@
 Name:		texlive-listofsymbols
 Version:	16134
-Release:	1
+Release:	2
 Summary:	Create and manipulate lists of symbols
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/listofsymbols
